@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цифровой университет</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#">
+      <img src="assets/logo.svg" alt="Логотип Цифровой университет" width="40" height="40">
+      <span>Цифровой университет</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <ul class="nav-list">
+        <li><a href="#about">О курсе</a></li>
+        <li><a href="#tracks">Направления</a></li>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#signup">Регистрация</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <h1>HTML и базовая CSS-разметка</h1>
+      <p>Практическая работа по созданию семантической структуры страницы.</p>
+      <img src="assets/cover.svg" alt="Иллюстрация к курсу" width="400" height="200">
+    </section>
+
+    <section id="tracks" class="tracks">
+      <h2>Направления</h2>
+      <div class="cards">
+        
+        <article class="card">
+            <h3>HTML</h3>
+            <p class="category">Основа</p>
+            <p>Структура и семантика документа</p>
+            <p class="value">Баллы: 8</p>
+        </article>
+
+        <article class="card">
+            <h3>CSS</h3>
+            <p class="category">Оформление</p>
+            <p>Стили и адаптивность</p>
+            <p class="value">Баллы: 9</p>
+        </article>
+
+        <article class="card">
+            <h3>Git</h3>
+            <p class="category">Инструменты</p>
+            <p>История изменений</p>
+            <p class="value">Баллы: 7</p>
+        </article>
+
+        <article class="card">
+            <h3>Forms</h3>
+            <p class="category">HTML</p>
+            <p>Пользовательский ввод</p>
+            <p class="value">Баллы: 6</p>
+        </article>
+
+        <article class="card">
+            <h3>Accessibility</h3>
+            <p class="category">Качество</p>
+            <p>Доступность интерфейса</p>
+            <p class="value">Баллы: 10</p>
+        </article>
+
+        <article class="card">
+            <h3>DevTools</h3>
+            <p class="category">Проверка</p>
+            <p>Исследование DOM и стилей</p>
+            <p class="value">Баллы: 8</p>
+        </article>
+        
+    
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Расписание</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Тема</th>
+            <th>Категория</th>
+            <th>Описание</th>
+            <th>Баллы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>Основа</td>
+            <td>Структура и семантика документа</td>
+            <td>8</td>
+          </tr>
+          <!-- Остальные строки -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="signup" class="signup">
+      <h2>Регистрация</h2>
+      <form action="#" method="post">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="track">Направление</label>
+        <select id="track" name="track" required>
+          <option value="">Выберите направление</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="git">Git</option>
+        </select>
+
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Цифровой университет</p>
+  </footer>
+
+</body>
+</html>
