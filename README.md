@@ -33,7 +33,7 @@ tpro-pr01-student/
 
 1. Клонируйте репозиторий:
 
-git clone https://github.com/GeKa/tpro-pr01-student.git
+git clone https://github.com/i-GeKa-i/tpro-pr01-student.git
 
 
 2. Откройте файл `index.html` в браузере.
